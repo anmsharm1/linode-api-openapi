@@ -44903,7 +44903,7 @@
                     "file-path": "schemas/get-databases-types-200.yaml"
                   }
                 },
-                "x-linode-cli-nested-list": "engines.mysql, engines.postgresql",
+                "x-linode-cli-nested-list": "engines.mysql, engines.postgresql, engines.valkey",
                 "x-linode-cli-use-schema": {
                   "additionalProperties": false,
                   "properties": {
@@ -45343,7 +45343,7 @@
                     "file-path": "schemas/database-type.yaml"
                   }
                 },
-                "x-linode-cli-nested-list": "engines.mysql, engines.postgresql",
+                "x-linode-cli-nested-list": "engines.mysql, engines.postgresql, engines.valkey",
                 "x-linode-cli-use-schema": {
                   "additionalProperties": false,
                   "properties": {
@@ -46125,13 +46125,13 @@
           }
         ],
         "summary": "List Valkey Managed Database advanced parameters",
+        "x-linode-cli-action": "valkey-config-view",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_only",
         "x-linode-iam": [
           {
@@ -47263,13 +47263,13 @@
           }
         ],
         "summary": "Create or restore a Valkey Managed Database",
+        "x-linode-cli-action": "valkey-create",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "add_databases",
         "x-linode-iam": [
           {
@@ -47983,13 +47983,13 @@
           }
         ],
         "summary": "List Valkey Managed Databases",
+        "x-linode-cli-action": "valkey-list",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_only",
         "x-linode-iam": [
           {
@@ -48617,13 +48617,13 @@
           }
         ],
         "summary": "Get a Valkey Managed Database",
+        "x-linode-cli-action": "valkey-view",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_only",
         "x-linode-iam": [
           {
@@ -49500,13 +49500,13 @@
           }
         ],
         "summary": "Update a Valkey Managed Database",
+        "x-linode-cli-action": "valkey-update",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_write",
         "x-linode-iam": [
           {
@@ -49596,13 +49596,13 @@
           }
         ],
         "summary": "Delete a Valkey Managed Database",
+        "x-linode-cli-action": "valkey-delete",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_write",
         "x-linode-iam": [
           {
@@ -49752,13 +49752,13 @@
           }
         ],
         "summary": "Get Valkey Managed Database credentials",
+        "x-linode-cli-action": "valkey-creds-view",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_only",
         "x-linode-iam": [
           {
@@ -49889,13 +49889,13 @@
           }
         ],
         "summary": "Reset Valkey Managed Database credentials",
+        "x-linode-cli-action": "valkey-creds-reset",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_write",
         "x-linode-iam": [
           {
@@ -50026,13 +50026,13 @@
           }
         ],
         "summary": "Patch a Valkey Managed Database",
+        "x-linode-cli-action": "valkey-patch",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_write",
         "x-linode-iam": [
           {
@@ -50163,13 +50163,13 @@
           }
         ],
         "summary": "Resume a Valkey Managed Database",
+        "x-linode-cli-action": "valkey-resume",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_write",
         "x-linode-iam": [
           {
@@ -50310,13 +50310,13 @@
           }
         ],
         "summary": "Get a Valkey Managed Database SSL certificate",
+        "x-linode-cli-action": "valkey-ssl-cert",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_only",
         "x-linode-iam": [
           {
@@ -50447,13 +50447,13 @@
           }
         ],
         "summary": "Suspend a Valkey Managed Database",
+        "x-linode-cli-action": "valkey-suspend",
         "tags": [
           "Valkey"
         ],
         "x-akamai": {
           "status": "LA"
         },
-        "x-linode-cli-skip": true,
         "x-linode-grant": "read_write",
         "x-linode-iam": [
           {
